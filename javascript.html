@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Tugas JavaScript Ervinna Jawak">
+
+    <title>JavaScript - Ervinna Jawak</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <header class="bg-blue-600 text-white shadow-md">
+
+        <nav class="container mx-auto px-6 py-4
+                    flex flex-col md:flex-row
+                    justify-between items-center">
+
+            <h1 class="text-2xl font-bold mb-3 md:mb-0">
+                Ervinna Jawak
+            </h1>
+
+            <div class="flex flex-wrap justify-center gap-4">
+
+                <a href="index.html" class="hover:text-blue-200">
+                    Home
+                </a>
+
+                <a href="about.html" class="hover:text-blue-200">
+                    About
+                </a>
+
+                <a href="projects.html" class="hover:text-blue-200">
+                    Projects
+                </a>
+
+                <a href="contact.html" class="hover:text-blue-200">
+                    Contact
+                </a>
+
+                <a href="javascript.html"
+                   class="text-blue-200 font-bold">
+                    JavaScript
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container mx-auto px-6 py-12">
+
+        <section class="max-w-xl mx-auto">
+
+            <div class="text-center mb-10">
+
+                <h2 class="text-4xl font-bold text-blue-600 mb-4">
+                    Tugas JavaScript
+                </h2>
+
+                <p class="text-gray-600">
+                    Kalkulator Nilai Mahasiswa
+                </p>
+
+            </div>
+
+
+            <!-- KALKULATOR -->
+            <div class="bg-white rounded-2xl shadow-md p-8">
+
+                <div class="mb-5">
+                    <label class="block font-semibold mb-2">
+                        Nilai Tugas
+                    </label>
+
+                    <input type="number"
+                           id="tugas"
+                           min="0"
+                           max="100"
+                           placeholder="Masukkan nilai tugas"
+                           class="w-full border border-gray-300
+                                  rounded-lg px-4 py-3
+                                  focus:outline-none
+                                  focus:ring-2
+                                  focus:ring-blue-500">
+                </div>
+
+
+                <div class="mb-5">
+                    <label class="block font-semibold mb-2">
+                        Nilai UTS
+                    </label>
+
+                    <input type="number"
+                           id="uts"
+                           min="0"
+                           max="100"
+                           placeholder="Masukkan nilai UTS"
+                           class="w-full border border-gray-300
+                                  rounded-lg px-4 py-3
+                                  focus:outline-none
+                                  focus:ring-2
+                                  focus:ring-blue-500">
+                </div>
+
+
+                <div class="mb-6">
+                    <label class="block font-semibold mb-2">
+                        Nilai UAS
+                    </label>
+
+                    <input type="number"
+                           id="uas"
+                           min="0"
+                           max="100"
+                           placeholder="Masukkan nilai UAS"
+                           class="w-full border border-gray-300
+                                  rounded-lg px-4 py-3
+                                  focus:outline-none
+                                  focus:ring-2
+                                  focus:ring-blue-500">
+                </div>
+
+
+                <button onclick="hitungNilai()"
+                        class="w-full bg-blue-600
+                               text-white py-3
+                               rounded-lg
+                               hover:bg-blue-700
+                               font-semibold">
+
+                    Hitung Nilai
+
+                </button>
+
+
+                <!-- HASIL -->
+                <div id="hasil"
+                     class="hidden mt-6 bg-blue-50
+                            rounded-lg p-5">
+
+                    <h3 class="text-xl font-bold
+                               text-blue-600 mb-3">
+                        Hasil Perhitungan
+                    </h3>
+
+                    <p>
+                        Nilai Akhir:
+                        <span id="nilaiAkhir"
+                              class="font-bold">
+                        </span>
+                    </p>
+
+                    <p>
+                        Grade:
+                        <span id="grade"
+                              class="font-bold">
+                        </span>
+                    </p>
+
+                    <p>
+                        Keterangan:
+                        <span id="keterangan"
+                              class="font-bold">
+                        </span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-600 text-white
+                   text-center py-6">
+
+        <p>
+            &copy; 2026 Ervinna Jawak.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+<script src="js/script.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
